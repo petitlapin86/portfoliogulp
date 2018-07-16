@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+</html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--below im telling my site to be responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Paige Madeline Jones - Portfolio - Web Developer</title>
+
+    <!--below im helping old versions handle my site well-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!--below im linking to my CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
+    </script>
+    <!--below im linking to my responsive CSS-->
+  <link rel="stylesheet" href="css/responsive.css">
+    <!--below im linking to my JS reportcard widget-->
+  <link rel="stylesheet" href="widget/reportcard/css/badges.css">
+
+</head>
+
+<body>
+
+  <header>
+        <div id="navbar">
+            <nav>
+              <a href="index.html">Home</a><a class="selected" href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class ="menu-icon">&#9776;</a> <!--this last item is adding responsive scale down design-->
+            </nav>
+      </div> <!--closes id navbar-->
+  </header> <!--this is closing the header-->
+
+          <section>
+          <div class="wrapper clearfix">
+            <div class="col-services">
+              <h2>SERVICES</h2>
+              <p>I have a diverse set of skills, ranging from handwork art + design to coding. </p>
+              <p>I recently completed Flatiron Schools Full Stack Web Development bootcamp which taught me HTML + CSS + JAVASCRIPT + SQL + RUBY on RAILS + REACT.</p>
+              <p>A forever student, I am currently studying for my AWS developer certification.</p>
+          </div>
+        </div>
+          </section>
+
+          <section>
+            <div class=" wrapper clearfix">
+          <div class="col-1 first">
+              <h2>I<br>CAN<br>HELP<br>YOU<br>WITH</h2>
+            </div>
+            <div class="col-1">
+              <h2>HTML CSS & JAVASCRIPT</h2>
+              <p>I can build or rework your website to be responsive, interactive and fast.</p>
+          </div>
+          <div class="col-1">
+              <h2>AESTHETIC AND DESIGN</h2>
+              <p>From logos to branding, I can help create a beautiful user experience.</p>
+          </div>
+          <div class="col-1">
+              <h2>IN THE WORKS</h2>
+              <p>I am currently learning Backend Development: RUBY, REACT, RAILS, SINATRA, SQL</p>
+        </div>
+      </div> <!--closes the wrapper-->
+        </section>
+
+           <section>
+            <div class="wrapper clearfix">
+              <div class="col-3">
+                <h2>SOME OF MY WORK</h2>
+                <p>This is where I will display my best portfolio projects.</p>
+                <p>and all of the cool stuff I have made.</p>
+                
+            </div>
+          </div>
+          </section>
+
+          <!--this line of code inserts actual treehouse widgets below-->
+          <div class="report-card treehouse"></div>
+
+          <div class="footer">
+          <footer><p>&copy; moon boots 2017. All Rights Reserved.</p></footer> <!--semantic elements-->
+          </div>
+
+      <!--JS report card widget below-->
+      <script src="widget/reportcard/js/reportcard.js"></script>
+  </body>

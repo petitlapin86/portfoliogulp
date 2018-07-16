@@ -1,0 +1,79 @@
+//header
+.navbar
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: space-between
+  width: 100%
+  background: $auqa
+  z-index: 2
+  text-align: center
+  padding: 0
+  transition: transform 0.5s ease-out
+  transform: translateX(0)
+  @media only screen and (max-width : 767px)
+    flex-wrap: wrap
+    width: 100%
+.navbar-collapse
+  @media only screen and (max-width : 767px)
+    transform: translateX(-100%)
+.navbar__link
+  flex-basis: 25%
+  max-width: 25%
+  padding: 22px 0
+  text-transform: uppercase
+  color: black
+  text-align: center
+  border-right: 2px solid #fff
+  text-decoration: none
+  font-size: 1em
+  +font(14px, $font-raleway, 600)
+  letter-spacing: 0.5px
+  &:hover, &:active, &:focus, &.active
+    transition: background 0.3s
+    text-decoration: none
+    color: black
+    background: $auqa-dark
+  @media only screen and (max-width : 767px)
+    flex-basis: 100%
+    max-width: 100%
+    border-bottom: 2px solid #fff
+.btn-hamburger
+  position: absolute
+  top: 0
+  right: 0
+  display: none
+  outline: none !important
+  background: $auqa
+  font-size: 30px
+  line-height: 1
+  &:hover, &:active, &:focus
+    transition: color 0.3s
+    color: $white
+    outline: none !important
+    box-shadow: none
+  @media only screen and (max-width : 767px)
+    border: none
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-left: auto
+    width: 40px
+    z-index: 100
+    border-radius: 0
+    height: 65px
+    width: 65px
+    .icon-menu
+      display: flex
+    .icon-hamburger
+      display: none
+.btn-close
+  @media only screen and (max-width : 767px)
+    .icon-menu
+      display: none
+    .icon-hamburger
+      display: flex
+//header END
