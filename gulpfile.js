@@ -1,4 +1,4 @@
-var gulp           = require('gulp'),
+    gulp           = require('gulp'),
 		sass           = require('gulp-sass'),
 		browserSync    = require('browser-sync'),
 		cleanCSS       = require('gulp-clean-css'),
