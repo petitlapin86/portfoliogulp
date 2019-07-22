@@ -69,22 +69,23 @@
 					<!-- changed this to input type submit for PHP -->
 				</form>
 				<!--Inline styles for response messages-->
-				<style> 
+				<style>
 					.success, .failure{
 						margin: 0 auto;
 						position: absolute;
-						top: 0px;
+						top: 50px;
 						left: 0;
 						z-index: 99;
 						padding: 5px;
 						width: 100%;
-						background: #4ADB60;
-						color: #fff;
+						background: #daebee;
+						color: #000;
 						text-align: center;
+						font: "Raleway";
 					}
 					.failure{
 						background: #D84C49;
-					
+
 						}
 				</style>
 				<?php                           //Use the POST method to get the user input and store them in PHP variables
@@ -93,21 +94,21 @@
                                 $from = 'paigxjbj@server235.web-hosting.com'; //who is the message from: in your case, this value MUST be the email from the server
                                 $to = 'paigemadelinejones@gmail.com';  //What email to send the message to, (your gmail)
                                 $subject = 'Message from Website Contact Form';  //Add a subject
-                           
-                                                    
+
+
                                 $body = "From: $firstname\n Message:\n $message"; // \n defines a new line, this is the body of the email
-                                                            
-                                if ($_POST['submit']) { //If the user submitted the form then send the message!				 
-                                    if (mail ($to, $subject, $body, $from)) { //this is the php mail() function that takes parameters to, subject, body, from 
+
+                                if ($_POST['submit']) { //If the user submitted the form then send the message!
+                                    if (mail ($to, $subject, $body, $from)) { //this is the php mail() function that takes parameters to, subject, body, from
                                         echo "<p class='success' onclick='hide()'>Your message has been sent!</p>"; //print this html code on success
-                                    } else { 
+                                    } else {
                                         echo error_get_last()['message']; //if error, show error message
 										print_r(error_get_last());
 										echo "<p class='failure' onclick='hide()'>Something went wrong, go back and try again!</p>"; //print this code on error
-                                   } 
+                                   }
 								}
-                               
-							
+
+
                             ?>
 			</div>
 		</div>
@@ -117,7 +118,7 @@
 		<p class="footer__copyright">&copy; moon boots 2017. All Rights Reserved.</p>
 	</footer><!-- footer END -->
 <script>
-	
+
 </script>
 	<!-- Optimized loading JS Start -->
 	<script>var scr = {"scripts":[
