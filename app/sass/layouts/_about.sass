@@ -3,7 +3,7 @@
     width: 100%
 .about
   margin-bottom: 20px
-.h2
+.h2, .customers th
   +font(21px, $font-raleway, 400)
   text-align: center
   padding-top: 50px
@@ -31,31 +31,42 @@
   text-align: center
   height: 100%
 
-.factsheet
-  margin-top: 20px
-  padding-top: 20px
-  padding-left: 20px
-  display: flex
-  flex-direction: column
-  align-items: flex-start
-  background: $gray
-  +font(18px, $font-raleway, 400)
-
-
 .list
   padding: 0
   @media only screen and (max-width : 1279px)
     display: flex
     justify-content: space-around
-.list-factsheet
-  margin-left: 23px
-  +font(14px, $font-raleway, 400)
 
 .list__item
-
   margin-bottom: 10px
   @media only screen and (max-width : 767px)
     font-size: 18px
 .list__item-follow
   list-style-type: none
   padding-bottom: 20px
+
+
+.customers
+  border-collapse: collapse
+  width: 100%
+  margin-top: 20px
+  padding-top: 20px
+  +font(14px, $font-raleway, 400)
+
+.customers td
+  padding-left: 18px
+  padding-top: 8px
+  padding-bottom: 8px
+
+.customers tr:nth-child(even)
+  background-color: #f2f2f2
+
+.customers tr:hover
+  background-color: #edeff1
+
+.customers th
+  padding-top: 12px
+  padding-bottom: 12px
+  text-align: center
+  background-color: #e5f8fa
+  color: black
