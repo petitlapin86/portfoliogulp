@@ -58,8 +58,7 @@
 				</p>
 
     <!--using free api mailthis.to for form submission-->
-		<form class="form-control" action="https://mailthis.to/paigemadelinejones@gmail.com"
-  			  method="POST" encType="multipart/form-data">
+		<form class="form-control" form action="https://formspree.io/xwkbreok" method="POST">
 				<label for="firstname" class="label labe-contacts">your name</label>
     		<input class="form-control__input" type="text" name="name" placeholder="Your name">
 				<br> <!--create space between inputs-->
@@ -68,10 +67,8 @@
 				<br> <!--create space between inputs-->
 		  	<label for="message" class="label labe-contacts">message</label>
   		  <textarea class="form-control__input" name="message" placeholder="Enter your message here"></textarea>
-  		  <input type="hidden" name="_subject" value="Contact form submitted">
-				<input type="hidden" name="_after" value="https://paigemadelinejones.com/success.html">
-  		  <input type="hidden" name="_honeypot" value="">
   		  <input class="btn btn-contact" type="submit" value="Send">
+				<input type="hidden" name="_next" value="http://paigemadelinejones.com/success.html"/>
 		</form>
 
 			</div>
